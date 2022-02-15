@@ -1,18 +1,16 @@
 public class ForLoop {
 
     public static void main(String[] args) {
-        int i;
-        for (i = 100; i >= 1; i--) {
-            {
-                System.out.print(getNumber(i) + " ");
+
+        for (int i = 100; i >= 1; i--) {
+            if (checkFour(i)) {
+                System.out.print(i + " ");
             }
         }
     }
 
-    public static int getNumber(int j) {
-        if (j % 4 == 0) {
-            return (int) j;
-        } else return 0;
+    public static boolean checkFour(int j) {
+        return j % 4 == 0;
     }
 }
 
