@@ -5,11 +5,12 @@ public class Number {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число: ");
-        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        int n = Math.abs(m);
 
-        System.out.printf("Сумма цифр числа %d: %d%n", n, SumOfNumbers(n));
-        System.out.printf("Сумма нечетных цифр числа %d: %d%n", n, SumOfOddNumbers(n));
-        System.out.printf("Максимальная цифра числа %d: %d", n, getMaxValue(n));
+        System.out.printf("Сумма цифр числа %d: %d%n", m, SumOfNumbers(n));
+        System.out.printf("Сумма нечетных цифр числа %d: %d%n", m, SumOfOddNumbers(n));
+        System.out.printf("Максимальная цифра числа %d: %d", m, getMaxValue(n));
 
     }
 
